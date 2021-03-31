@@ -1,6 +1,6 @@
 import requests,json
 def consultar(message,bot,mode):
-    print('aqui')
+    msg=''
     if mode == 1:
         cmd = (message.text).replace('/cpf ','').replace('/CPF ','')
         api = requests.get("http://45.178.183.3/cpf.php?cpf={}".format(cmd)).text
@@ -18,11 +18,16 @@ Sexo: {api['sexo']}
 Nascimento: {api['nascimento']}
     '''
     if mode == 3:
-        msg = f'''
-Resultados: {api['quantidadeResultados']}
-CPF: {api['resultados'][0]['cpf']}
-Nome: {api['resultados'][0]['nome']}
-Sexo: {api['resultados'][0]['sexo']}
-Nascimento: {api['resultados'][0]['nascimento']}
+        msg = f"Resultados: {api['quantidadeResultados']} \n"
+        for i in range(0,10): # int(api['quantidadeResultados']
+            try:
+                mensagem = f'''
+CPF: {api['resultados'][i]['cpf']}
+Nome: {api['resultados'][i]['nome']}
+Sexo: {api['resultados'][i]['sexo']}
+Nascimento: {api['resultados'][i]['nascimento']}
         '''
+                msg = msg + mensagem
+            except:
+                pass
     bot.reply_to(message,msg)
