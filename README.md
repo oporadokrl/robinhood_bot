@@ -1,5 +1,5 @@
 # RobinHood Bot
-![RobinHood Bot](https://github.com/oporadokrl/robinhood_bot/blob/master/robinhood.png)
+![RobinHood Bot](https://raw.githubusercontent.com/oporadokrl/robinhood_bot/master/robinhood.png)
 
 Um bot que entrega aos pobres o que os ricos obtém facilmente
 
