@@ -55,3 +55,19 @@ Se você não tem um token para o seu bot,siga os passos abaixo:
 ```
 # zypper install python git
 ```
+**Obs:** _Termux_ é da mesma forma que _Debian/Ubuntu_
+
+## O que o bot faz atualmente
+- [ ] Consulta por nome
+- [ ] Consulta por telefone
+- [ ] Consulta por CPF
+- [x] Baixa videos do youtube em MP4
+- [x] Baixa videos do youtube em MP3
+- [ ] Consulta por CNPJ
+- [ ] Consulta por CRM
+- [x] Consulta por placa
+- [x] Consulta por bancos
+- [x] Gerador de CPF
+- [x] Consulta por IP
+- [x] Consulta por BIN
+- [x] Consulta por CEP
